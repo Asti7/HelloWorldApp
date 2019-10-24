@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'widgets/sexy_tile.dart';
 
 class IntroPage extends StatelessWidget {
-
-
   List<String> itemContent = [
     'This app shows the syntax of several coding languages on how to print Hello World. \n\n'
         'This app was a result of a challenge regarding 2 hour builds.\n\n'
@@ -39,39 +37,55 @@ class IntroPage extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: ListView(
+              child: Stack(
                 children: <Widget>[
-                  SexyTile(
-                    color: Color(0xff1a3e59),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          
-                          // SizedBox(
-                          //   height: 20.0,
-                          // ),
-                          Text(
-                            itemContent[0],
-                            style: TextStyle(
-                              fontFamily: 'Roboto Mono',
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18.0,
-                              color: Colors.white,
-                            ),
-                            textAlign: TextAlign.left,
-                            softWrap: true,
-                            overflow: TextOverflow.fade,
+                  ListView(
+                    children: <Widget>[
+                      SexyTile(
+                        color: Color(0xff1a3e59),
+                        child: Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              SizedBox(
+                                height: 40.0,
+                              ),
+                              Text(
+                                itemContent[0],
+                                style: TextStyle(
+                                  fontFamily: 'Roboto Mono',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 18.0,
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.left,
+                                softWrap: true,
+                                overflow: TextOverflow.fade,
+                              ),
+                            ],
                           ),
-                        ],
+                        ),
+                      ),
+                      
+                    ],
+                  ),
+                  Positioned(
+                    left: 30,
+                    child: CircleAvatar(
+                      backgroundColor: Color(0xff719192),
+                      radius: 40.0,
+                      child: Icon(
+                        Icons.code,
+                        color: Color(0xff1a3e59),
                       ),
                     ),
                   ),
+                  
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
