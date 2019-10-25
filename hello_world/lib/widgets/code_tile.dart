@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
 class CodeTile extends StatelessWidget {
-  CodeTile({this.height, this.width, @required this.langName, @required this.code, @required this.image});
+  CodeTile(
+      {this.height,
+      this.width,
+      @required this.langName,
+      @required this.code,
+      this.image});
 
   final double height;
   final double width;
   final String langName;
   final String code;
   final String image;
+  // final String path;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -41,7 +47,7 @@ class CodeTile extends StatelessWidget {
                   code,
                   style: TextStyle(
                     fontFamily: 'Roboto Mono',
-                    fontSize: 18,
+                    fontSize: 13,
                     color: Colors.white70,
                   ),
                 ),
@@ -53,13 +59,12 @@ class CodeTile extends StatelessWidget {
           right: 5,
           bottom: 5,
           child: Container(
-            height: 100,
-            width: 100,
+            height: 80,
+            width: 80,
             child: Image.asset('images/$image'),
           ),
-        )
+        ),
       ],
     );
   }
 }
-

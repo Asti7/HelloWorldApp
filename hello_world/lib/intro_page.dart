@@ -4,7 +4,7 @@ import 'widgets/sexy_tile.dart';
 class IntroPage extends StatelessWidget {
   List<String> itemContent = [
     'This app shows the syntax of several coding languages on how to print Hello World. \n\n'
-        'This app was a result of a challenge regarding 2 hour builds.\n\n'
+        'This app was a result of a challenge regarding 1 hour builds.\n\n'
         'Hope you appreciate the simplicity of the app 😄 and it can somehow help in having a quick look at how '
         'different programming languages compare with regard to their syntax.\n\n\n'
         '- Developer'
@@ -68,7 +68,6 @@ class IntroPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      
                     ],
                   ),
                   Positioned(
@@ -82,16 +81,14 @@ class IntroPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
                 ],
               ),
             ),
           ],
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
-        heroTag: 'fab',
         child: Icon(
           Icons.forward,
           size: 30.0,
@@ -99,7 +96,7 @@ class IntroPage extends StatelessWidget {
         tooltip: 'Accept',
         backgroundColor: Color(0xff1a3e59),
         elevation: 5.0,
-        onPressed: () => Navigator.pushNamed(context, 'main_page'),
+        onPressed: () => Navigator.pushNamed(context, 'start_page'),
       ),
     );
   }
