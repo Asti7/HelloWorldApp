@@ -3,11 +3,11 @@ import 'widgets/sexy_tile.dart';
 
 class IntroPage extends StatelessWidget {
   List<String> itemContent = [
-    'This app shows the syntax of several coding languages on how to print Hello World. \n\n'
-        'This app was a result of a challenge regarding 1 hour builds.\n\n'
+    'The app shows the syntax of several coding languages on how to print Hello World. \n\n'
+        'This app was a result of a challenge regarding 2 hour builds.\n\n'
         'Hope you appreciate the simplicity of the app 😄 and it can somehow help in having a quick look at how '
         'different programming languages compare with regard to their syntax.\n\n\n'
-        '- Developer'
+        '- Astitva'
   ];
 
   @override

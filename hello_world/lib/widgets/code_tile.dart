@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CodeTile extends StatelessWidget {
   CodeTile(
@@ -6,14 +7,14 @@ class CodeTile extends StatelessWidget {
       this.width,
       @required this.langName,
       @required this.code,
-      this.image});
+      this.image,this.onPressed});
 
   final double height;
   final double width;
   final String langName;
   final String code;
   final String image;
-  // final String path;
+  final Function onPressed;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -58,10 +59,13 @@ class CodeTile extends StatelessWidget {
         Positioned(
           right: 5,
           bottom: 5,
-          child: Container(
-            height: 80,
-            width: 80,
-            child: Image.asset('images/$image'),
+          child: FlatButton(
+            onPressed: onPressed,
+            child: Container(
+              height: 80,
+              width: 80,
+              child: Image.asset('images/$image'),
+            ),
           ),
         ),
       ],
