@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hello_world/main_page.dart';
 import 'package:hello_world/start_page.dart';
 import 'about_page.dart';
 import 'intro_page.dart';
 
-void main() => runApp(HelloWorldApp());
+void main() {
+  SystemChrome.setPreferredOrientations(
+          [DeviceOrientation.portraitUp,DeviceOrientation.portraitDown])
+      .then((_) {
+    runApp(HelloWorldApp());
+  });
+}
 
 class HelloWorldApp extends StatelessWidget {
   @override
