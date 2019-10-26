@@ -9,7 +9,20 @@ class AboutPage extends StatelessWidget {
         'this app was an attempt for me to understand the Flutter framework and as a beginner developer experience the whole '
         'process of developing an app and launching it to the App Store.\n\n\n'
         'The source code of this app is on Github and is open source. ⭐️ the repo as it really helps out a lot !\n\n'
-        '- Astitva (Developer)'
+        '- Astitva (Developer)',
+
+        '- Flutter community\n'
+        '- Internet commons for logos\n\n'
+        '- Pdf resources\n'
+        '   - CodeConquest.com\n'
+        '   - nostarchpress.com\n'
+        '   - Greg Book\n'
+        '   - The coding guys\n'
+        '   - raywenderlich.com\n'
+        '   - jgbailey@codeslower.com\n'
+        '   - edurekka\n'
+        '   - AddedBytes.com\n'
+        
   ];
 
   @override
@@ -62,6 +75,55 @@ class AboutPage extends StatelessWidget {
                                 overflow: TextOverflow.fade,
                               ),
                             ),
+                            
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(
+                       bottom: 10, left: 10, right: 10),
+                  child: Card(
+                    elevation: 10.0,
+                    color: Color(0xff1a3e59),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
+                    child: Container(
+                      height: 350,
+                      width: 350,
+                      child: Center(
+                        child: Column(
+                          children: <Widget>[
+                            SizedBox(height: 24),
+                            Text(
+                              'Credits',
+                              style: TextStyle(
+                                  fontSize: 24,
+                                  fontFamily: 'Roboto Mono',
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                            SizedBox(height: 24),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(left: 10.0, right: 10),
+                              child: Text(
+                                itemContent[1],
+                                style: TextStyle(
+                                  fontFamily: 'Roboto Mono',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 14.0,
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.left,
+                                softWrap: true,
+                                overflow: TextOverflow.fade,
+                              ),
+                            ),
+                            
                           ],
                         ),
                       ),
