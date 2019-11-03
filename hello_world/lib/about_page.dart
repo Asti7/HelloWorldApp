@@ -4,10 +4,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatelessWidget {
   List<String> itemContent = [
-    'This app was a result of a challenge about making an iOS app within 2 hours. '
+    'This app was a result of a challenge about making an app within 2 hours. '
         'The app is written in Dart code using the awesome Flutter framework by Google, '
         'this app was an attempt for me to understand the Flutter framework and as a beginner developer experience the whole '
-        'process of developing an app and launching it to the App Store.\n\n\n'
+        'process of developing an app and launching it to the Play Store.\n\n\n'
         'The source code of this app is on Github and is open source. ⭐️ the repo as it really helps out a lot !\n\n'
         '- Astitva (Developer)',
 
