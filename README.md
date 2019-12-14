@@ -7,6 +7,6 @@ Shows syntax of different languages on how to print Hello World.
 ### Screenshots
 
 
-<img src="https://github.com/Asti7/HelloWorldApp/blob/master/screenshots/2.png" height="250">,
-<img src="https://github.com/Asti7/HelloWorldApp/blob/master/screenshots/1.png" height="250">,
-<img src="https://github.com/Asti7/HelloWorldApp/blob/master/screenshots/3.png" height="250">
+<img src="https://github.com/Asti7/HelloWorldApp/blob/master/screenshots/1.png" height="350">,
+<img src="https://github.com/Asti7/HelloWorldApp/blob/master/screenshots/2.png" height="350">,
+<img src="https://github.com/Asti7/HelloWorldApp/blob/master/screenshots/3.png" height="350">
